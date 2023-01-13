@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=WindSong:wght@400;500&display=swap');
+
+*{
+  font-family: 'Quattrocento', serif;
+  margin:0; 
+  padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s linear; /* this just adds an extra fade-in effect when you first enter the site*/
+  text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    /* in order for it to slide/scroll to the sections smoothly*/
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #E9DAC4;
+}
+
+h1, h2{
+    font-family: 'WindSong', cursive;
+}
+
+/* heading used for all sections */
+
+.heading{
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    position: relative;
+    letter-spacing: .2rem;
+}
+
+.heading::before, .heading::after{
+    content: '';
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top: .4rem solid black;
+    border-left: .4rem solid black;
+}
+
+.heading::before{
+    top: 5.8rem;
+    left: -2rem;
+}
+
+.heading::after{
+    bottom: -.5rem;
+    right: -2rem;
+    transform: rotate(180deg);
+}
+
+.header{
+    align-items: right;
+}
+
+.header img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.header .fa-bars{
+    color: #122620;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+
+.header .navbar ul{
+    list-style-type: none;
+    align-items: right;
+    justify-content: space-around;
+}
+
+.header .navbar ul li{
+    margin: 0 1.5rem;
+}
+
+.header .navbar ul li a{
+    font-size: 2rem;
+    color: #122620;
+}
+
+.header .navbar ul li a:hover{
+    color: white;
+}
+
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: black;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,0.3);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.btn img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+/* home section */
+
+.home{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden;
+    background-image: url("images/jordan.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .title{
+    color: white;
+    font-size: 5rem;
+    text-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.3);
+}
+
+.home .slogan{
+    color: #eee;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.3);
+}
+
+.home button{
+    height: 4rem;
+    width: 18rem;
+    background: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    box-sizing: 0 0.3 0.3 rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.home a{
+    color: black;
+}
+
+.home button:hover{
+    transform: scale(1.2);
+}
+
+/* About Us Section */
+
+.about{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+}
+
+.about .row .content{
+    text-align: left;
+}
+
+.about .row .image img{
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.about .row .content h2{
+    font-size: 3rem;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+/* Sites Section */
+
+.sites{
+    width: 100vw;
+    text-align: center;
+}
+
+.sites .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    margin: 2rem 0;
+}
+
+.sites .row .content{
+    text-align: left;
+    padding: 0 3rem;
+}
+
+.sites .row .image img{
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.sites .row .content h2{
+    font-size: 3rem;
+}
+
+.sites .row .content p{
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+/* Contact Us - Let's Get to Know You */
+.contact{
+    width: 100vw;
+    text-align: center;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .row .image img{
+    width: 30vw;
+}
+
+.contact .row .form-container{
+    width: 50%;
+    text-align: left;
+    padding: 0 5rem;
+}
+
+.contact .row .form-container input, textarea, select{
+    outline: none;
+    border: none;
+    height: 4rem;
+    background: none;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .5rem rgba(0,0,0,.2);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.contact .row .form-container select{
+    color: grey;
+}
+
+.contact .row .form-container .inputBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .row .form-container .inputBox input[type=text]{
+    width: 49%;
+}
+
+.contact .row .form-container input[type=email], select{
+    width: 100%;
+}
+
+.contact .row .form-container textarea{
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.contact .row .form-container .btn{
+    border-radius: .5rem;
+    width: 10rem;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background-color: #AC8E60;
+}
+
+.footer h1{
+    color: white;
+    font-weight: 400;
+}
+
+/* media queries */
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+
+    /* header + navbar */
+    .header .fa-bars{
+        display: block;
+    }
+
+    .header .navbar{
+        position: fixed;
+        top: -120%;
+        left: 0;
+        height: auto;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        border-top: .1rem solid rgba(0,0,0,0.3);
+    }
+
+    .header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .header .navbar ul li{
+        margin: 1rem 0;
+    }
+
+    .header .navbar ul li a{
+        color: #444;
+        font-size: 2.4rem;
+    }
+
+    .header .fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .nav-toggle{
+        top: 5.8rem;
+    }
+
+    /* home section */
+    .home .banner{
+        font-size: 4rem;
+    }
+
+    .home .slogan{
+        font-size: 1.7rem;
+    }
+
+    /* services sections */
+    .services .row{
+        flex-flow: column-reverse;
+    }
+
+    .services .row:nth-child(even){
+        flex-flow: column;
+    }
+
+    .services .row .image img{
+        width: 100vw;
+    }
+
+    .services .row .content{
+        padding: 0;
+    }
+
+    /* contact us section */
+    .contact .row{
+        flex-flow: column;
+    }
+
+    .contact .row .image img{
+        width: 100vw;
+
+    }
+
+    .contact .row .form-container{
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+}
+    
+@media (max-width:550px){
+    .footer{
+        flex-flow: column;
+    }
+
+    .footer h1{
+        text-align: center;
+    }
+
+    .footer .icons{
+        padding: 2rem 0;
+    }
+}

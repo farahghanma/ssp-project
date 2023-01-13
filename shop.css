@@ -1,0 +1,63 @@
+#logo { float: left; }
+.card{
+    display: inline-block;
+}
+.card-deck {
+    margin: 60px;
+
+
+}
+
+.card-title, .card-text{
+    font-family: tisa; 
+    text-align: center;
+}
+.text-center{
+    font-family: Brush Script MT;
+    font-size: 70px;
+    color: dimgrey;
+}
+.gift{
+    height:  60px;
+    width:  60px;
+}
+
+footer {
+    font-size: 20px;
+    padding: 25px;
+    text-align: center;
+
+}
+
+.container {
+  padding: 2rem 0rem;
+}
+
+
+.theader{
+      border: 0;
+      color: #666;
+      font-size: 0.8rem;
+}
+
+.table-image td, .table-image th {
+    vertical-align: middle;
+    text-align: center;
+}
+    
+.qty {
+      max-width: 2rem;
+    }
+
+.price {
+  margin-left: 1rem;
+}
+
+.modal-footer {
+  padding-top: 0rem;
+}
+.navbar {
+        background-color: #AC8E60;
+
+}
+
